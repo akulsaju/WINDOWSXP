@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    background-color: #2f2f2f;
+    font-family: Arial, sans-serif;
+}
+
+/* Taskbar */
+.taskbar {
+    background-color: #0c8db1;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.start-button {
+    background-color: #0c8db1;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taskbar-items {
+    display: flex;
+}
+
+.taskbar-items span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Desktop Area */
+.desktop {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Desktop Icons */
+.desktop-icon {
+    background-color: #006fa6;
+    color: white;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.desktop-icon:hover {
+    background-color: #004f7f;
+}
+
+/* Start Menu */
+.start-menu {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #fff;
+    border: 2px solid #0c8db1;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #000;
+    padding: 10px;
+}
+
+.start-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-menu-header h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.start-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.start-menu ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.start-menu ul li:hover {
+    background-color: #0c8db1;
+    color: white;
+}
+
+.close-btn {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}

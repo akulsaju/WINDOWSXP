@@ -9,7 +9,7 @@
 <body>
     <!-- Taskbar -->
     <div class="taskbar">
-        <div class="start-button">
+        <div class="start-button" id="start-button">
             Start
         </div>
         <div class="taskbar-items">
@@ -19,11 +19,27 @@
         </div>
     </div>
 
+    <!-- Start Menu -->
+    <div id="start-menu" class="start-menu">
+        <div class="start-menu-header">
+            <h3>Start Menu</h3>
+            <button class="close-btn" onclick="closeStartMenu()">Close</button>
+        </div>
+        <ul>
+            <li>Programs</li>
+            <li>Documents</li>
+            <li>Settings</li>
+            <li>Shut Down</li>
+        </ul>
+    </div>
+
     <!-- Desktop Area -->
     <div class="desktop">
         <div class="desktop-icon">My Computer</div>
         <div class="desktop-icon">Recycle Bin</div>
         <div class="desktop-icon">Internet Explorer</div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
